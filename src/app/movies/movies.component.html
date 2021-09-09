@@ -1,0 +1,16 @@
+<div class="movies">
+    <div
+      class="movie"
+      *ngFor="let movie of movies"
+      routerLink="/movies/{{ movie.id }}"
+    >
+      <img
+        src="https://image.tmdb.org/t/p/w500/{{ movie.backdrop_path }}"
+        alt="movie wallpaper"
+        onerror="this.src='https://northernvirginiamag.com/wp-content/uploads/2020/08/movie-popcorn.jpg'"
+      />
+      <h2 class="title">{{ movie.title }}</h2>
+    </div>
+    <p *ngIf="!movies.length">No results</p>
+  </div>
+  

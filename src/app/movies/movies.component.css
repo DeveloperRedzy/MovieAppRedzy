@@ -1,0 +1,25 @@
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.movie {
+  margin-bottom: 2rem;
+  border: 1px solid #000;
+  flex: 0 100%;
+  cursor: pointer;
+}
+.movie img {
+  height: 350px;
+  width: 100%;
+}
+.title {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (min-width: 920px) {
+  .movie {
+    flex: 0 32%;
+  }
+}

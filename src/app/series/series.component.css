@@ -1,0 +1,25 @@
+.series {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.serie {
+  margin-bottom: 2rem;
+  border: 1px solid #000;
+  flex: 0 100%;
+  cursor: pointer;
+}
+.serie img {
+  height: 350px;
+  width: 100%;
+}
+.title {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (min-width: 920px) {
+  .serie {
+    flex: 0 32%;
+  }
+}

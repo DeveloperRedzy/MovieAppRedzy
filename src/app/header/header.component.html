@@ -1,0 +1,11 @@
+<div class="header">
+    <input
+      class="search"
+      type="text"
+      placeholder="Search..."
+      [(ngModel)]="search"
+      (ngModelChange)="onSearch($event)"
+    />
+    <div *ngIf="isSearching" class="lds-dual-ring"></div>
+  </div>
+  

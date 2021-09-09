@@ -1,0 +1,11 @@
+<div *ngIf="data" class="serie-details">
+    <h1 class="title">{{ data.name }}</h1>
+    <img
+      src="https://image.tmdb.org/t/p/original/{{ data.poster_path }}"
+      alt="serie wallpaper"
+      onerror="this.src='https://northernvirginiamag.com/wp-content/uploads/2020/08/movie-popcorn.jpg'"
+    />
+    <p class="details">{{ data.overview }}</p>
+  </div>
+  <div *ngIf="!data">Loading...</div>
+  
